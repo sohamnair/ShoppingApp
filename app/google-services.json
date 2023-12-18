@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "467743910098",
+    "firebase_url": "https://morningessentials-b7d32.firebaseio.com",
+    "project_id": "morningessentials-b7d32",
+    "storage_bucket": "morningessentials-b7d32.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467743910098:android:6dd600c3145cbe91e5250b",
+        "android_client_info": {
+          "package_name": "com.example.morningessentials"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "467743910098-jmn5sk32g4cf58hs9kalb3c4g0g4c6eb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOgZkNpAY1TV3kCbQ0qShjcQq4fX0YbpY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "467743910098-jmn5sk32g4cf58hs9kalb3c4g0g4c6eb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "467743910098-s84uh4mhtsh9hpu8ktln8fqn3oddjsjm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.MorningEssentials"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467743910098:android:886c65bdbec3611de5250b",
+        "android_client_info": {
+          "package_name": "com.morningessetial.morningessentials"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "467743910098-jmn5sk32g4cf58hs9kalb3c4g0g4c6eb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOgZkNpAY1TV3kCbQ0qShjcQq4fX0YbpY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "467743910098-jmn5sk32g4cf58hs9kalb3c4g0g4c6eb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "467743910098-s84uh4mhtsh9hpu8ktln8fqn3oddjsjm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.MorningEssentials"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

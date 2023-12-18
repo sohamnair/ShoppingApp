@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.morningessetial.morningessentials.Home">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/r1"
+        android:background="#fff"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:text="Home"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/t1"
+            />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_settings_black_24dp"
+            android:background="#fff"
+            android:layout_marginTop="5dp"
+            android:id="@+id/settings"
+            />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_shopping_cart_black_24dp"
+            android:id="@+id/cart"
+            android:background="#fff"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="60dp"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/r1"
+        android:background="#43000000"
+        android:id="@+id/v2"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/v2"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/d"
+                android:layout_marginTop="20dp"
+                android:text="New Features:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@id/c2"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/autoorder"
+                app:cardCornerRadius="15dp"
+                android:elevation="100dp"
+                android:layout_below="@+id/d"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/r5"
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:background="@drawable/i1">
+
+                        <TextView
+                            android:id="@+id/c"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:gravity="start"
+                            android:text="Auto-Ordering"
+                            android:textColor="#fff"
+                            android:textSize="28sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/e"
+                            android:layout_below="@+id/c"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="What to cook, which recipe to make, do you get this question everyday?"
+                            android:textColor="#fff"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="200dp"
+                            android:gravity="end"
+                            />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/r5"
+                        android:background="#000"
+                        >
+
+                        <TextView
+                            android:id="@+id/a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="10dp"
+                            android:gravity="center"
+                            android:text="View Details"
+                            android:textColor="#fff"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="15dp"
+                            />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/recipecard"
+                app:cardCornerRadius="15dp"
+                android:elevation="100dp"
+                android:layout_below="@id/autoorder"
+                android:layout_marginBottom="25dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rec"
+                    android:elevation="100dp"
+
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Buy Vegetables And Checkout Within 2 min's!"
+                        android:textStyle="bold"
+                        android:textSize="24sp"
+                        android:textColor="#000"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginTop="15dp"
+                        android:id="@+id/t10"
+                        android:gravity="center"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/t3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/t10"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginRight="20dp"
+                        android:textColor="#ff00"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.65dp"
+                        android:layout_below="@id/t10"
+                        android:id="@+id/view"
+                        android:layout_marginTop="15dp"
+                        android:background="#75000000"
+                        />
+
+                    <TextView
+                        android:id="@+id/t6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/t3"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="Step 1: Search The Recipe And View Ingredients"
+                        android:textColor="#000"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/t7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/t6"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="Step 2: Add It To The Cart"
+                        android:textColor="#000"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/t11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/t7"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="Step 3: Checkout And Pay"
+                        android:textColor="#000"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/t8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/t11"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="(All The Vegetables Required For The Recipe Will Be Automatically Added To The Cart)"
+                        android:textColor="#000"
+                        android:textSize="17sp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="italic|bold"
+                        />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_below="@id/t8"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/btn"
+                        android:text="View Recipes"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:id="@+id/viewrecipe"
+                        />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/c2"
+                android:layout_below="@id/c3"
+                android:layout_marginTop="20dp"
+                >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/r2"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Combo Category"
+                            android:layout_centerHorizontal="true"
+                            android:textStyle="bold"
+                            android:textColor="#000"
+                            android:textSize="23.5sp"
+                            android:id="@+id/t13"
+                            android:layout_marginTop="15dp"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#43000000"
+                            android:id="@+id/v4"
+                            android:layout_marginTop="13dp"
+                            android:layout_below="@id/t13"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginStart="20dp"
+                            />
+
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="130dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/img16"
+                            android:src="@drawable/fcombo"
+                            android:layout_below="@id/v4"
+                            />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img16"
+                            android:text="Fruits"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#DA2C2C"
+                            android:layout_marginEnd="30dp"
+                            android:gravity="center"
+                            android:layout_marginBottom="15dp"
+                            android:layout_alignParentEnd="true"
+                            android:id="@+id/t103"
+                            />
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="130dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/img17"
+                            android:src="@drawable/days"
+                            android:layout_below="@id/v4"
+                            />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img17"
+                            android:text="Vegetables"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#DA2C2C"
+                            android:layout_marginStart="30dp"
+                            android:gravity="center"
+                            android:id="@+id/t104"
+                            />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img18"
+                            android:text="Fruits and Vegetables"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:textColor="#DA2C2C"
+                            android:gravity="center"
+                            android:id="@+id/t105"
+                            android:layout_marginBottom="10dp"
+                            android:layout_centerHorizontal="true"
+                            />
+
+                        <ImageView
+                            android:id="@+id/img18"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@id/t103"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="30dp"
+                            android:src="@drawable/mixed" />
+                    </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/c3"
+                android:background="#fff"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Shop By Category"
+                        android:textStyle="bold"
+                        android:textSize="23.5sp"
+                        android:textColor="#000"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:id="@+id/t12"
+                        android:gravity="center"
+                        />
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/img1"
+                        android:layout_alignParentStart="true"
+                        android:background="#000"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="7.5dp"
+                        android:src="@drawable/fruits"
+                        android:layout_below="@id/t12"
+                        />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img1"
+                        android:text="Fruits"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#DA2C2C"
+                        android:layout_marginStart="30dp"
+                        android:gravity="center"
+                        android:layout_marginBottom="15dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/img2"
+                        android:layout_alignParentEnd="true"
+                        android:background="#000"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="7.5dp"
+                        android:src="@drawable/vegetable"
+                        android:layout_below="@id/t12"
+                        />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img2"
+                        android:text="Vegetables"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#308637"
+                        android:layout_marginEnd="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:id="@+id/vegtext"
+                        />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_below="@id/vegtext"
+                        android:id="@+id/herb"
+                        android:layout_marginBottom="7.5dp"
+                        android:src="@drawable/herbs"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:scaleType="fitXY"
+                        />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/herb"
+                        android:text="Leafy and Chilli's"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#1B5E20"
+                        android:layout_marginBottom="15dp"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:id="@+id/bar"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="25dp"
+            android:background="@drawable/barbg"
+            >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please Wait..."
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:textColor="#fff"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

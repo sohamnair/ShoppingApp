@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.morningessetial.morningessentials.autoorder">
+
+    <ImageView
+        android:layout_width="47dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+        android:id="@+id/back"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:textColor="#000"
+            android:text="Auto-Ordering"
+            android:textStyle="bold"
+            android:id="@+id/t1"
+            android:layout_centerHorizontal="true"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#000"
+            android:layout_below="@id/t1"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/view1"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/view1"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="19sp"
+                    android:text="We have the solution for your everyday question.."
+                    android:textColor="#B7000000"
+                    android:id="@+id/t2"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/t2"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="19sp"
+                    android:text="What to cook?"
+                    android:textColor="#B7000000"
+                    android:id="@+id/t8"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/t8"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="19sp"
+                    android:text="We will choose and deliver vegetables ONLY..."
+                    android:textColor="#B7000000"
+                    android:id="@+id/t100"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    />
+
+                <View
+                    android:layout_width="190dp"
+                    android:layout_height="0.5dp"
+                    android:background="#000"
+                    android:layout_below="@id/t100"
+                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/view2"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view2"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="We will select vegetables from our recipe catalog and delivery 10 meals at your doorstep every 5 days for the service period you select (i.e 2 meals per day)"
+                    android:textColor="#DD000000"
+                    android:id="@+id/t3"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    />
+
+               <!-- <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/t3"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Include fruits to complete the meal box [Recommended]"
+                    android:textColor="#DD000000"
+                    android:id="@+id/t11"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    />
+-->
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="0.5dp"
+                    android:background="#000"
+                    android:layout_below="@id/t3"
+                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/view3"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view3"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Tell us your dislikes and we won't deliver the recipe containing those vegetables"
+                    android:textColor="#DD000000"
+                    android:id="@+id/t4"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/t4"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Eg: Someone dislikes Brinjal so we won't deliver vegetables required for preparing Baingan Ka Bharta, etc..."
+                    android:textColor="#DD000000"
+                    android:id="@+id/t5"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    />
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="0.5dp"
+                    android:background="#000"
+                    android:layout_below="@id/t5"
+                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/view4"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view4"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Select the service period: 15/20/30 days"
+                    android:textColor="#D7000000"
+                    android:id="@+id/t7"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/t7"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Not sure about how this will work, experience our 15 days service and we are sure that you will love the experience and continue Auto-Ordering"
+                    android:textColor="#000"
+                    android:id="@+id/t10"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <View
+                    android:layout_width="190dp"
+                    android:layout_height="0.5dp"
+                    android:background="#000"
+                    android:layout_below="@id/t10"
+                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/view6"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view6"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="19sp"
+                    android:text="Contact Customer-care For Queries"
+                    android:textColor="#B7000000"
+                    android:id="@+id/t9"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/t9"
+                    android:layout_marginTop="15dp"
+                    android:text="Next"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginEnd="70dp"
+                    android:background="@drawable/btndes"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:id="@+id/next"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="20dp"
+                    />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+</RelativeLayout>

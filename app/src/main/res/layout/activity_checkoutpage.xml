@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.morningessetial.morningessentials.checkoutpage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="72dp"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+            android:layout_marginStart="7dp"
+            android:id="@+id/back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Order Summary"
+            android:textStyle="bold"
+            android:textSize="23.5sp"
+            android:textColor="#000"
+            android:id="@+id/txt1"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/txt1"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="#6B000000"
+            android:id="@+id/view10"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:text="Cart total"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:textColor="#E2000000"
+            android:id="@+id/txt2"
+            android:layout_below="@id/view10"
+            android:layout_marginStart="55dp"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view10"
+            android:layout_marginTop="27dp"
+            android:textStyle="italic"
+            android:textSize="18sp"
+            android:textColor="#0518AA"
+            android:id="@+id/balance"
+            android:layout_alignParentEnd="true"
+            android:gravity="end"
+            android:layout_marginEnd="45dp"
+            android:paddingEnd="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Delivery"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:textColor="#E2000000"
+            android:id="@+id/txt3"
+            android:layout_below="@id/txt2"
+            android:layout_marginStart="55dp"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/balance"
+            android:layout_marginTop="20dp"
+            android:textStyle="italic"
+            android:textSize="18sp"
+            android:textColor="#0518AA"
+            android:id="@+id/deliv"
+            android:layout_marginEnd="45dp"
+            android:paddingEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:gravity="end"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Discount"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:textColor="#E2000000"
+            android:id="@+id/cashback"
+            android:layout_below="@id/deliv"
+            android:layout_marginStart="55dp"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deliv"
+            android:layout_marginTop="20dp"
+            android:textStyle="italic"
+            android:textSize="18sp"
+            android:textColor="#0518AA"
+            android:id="@+id/cashbackval"
+            android:layout_marginEnd="45dp"
+            android:paddingEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:gravity="end"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/cashbackval"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="#6B000000"
+            android:id="@+id/view1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Order total"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:textColor="#EB000000"
+            android:id="@+id/txt4"
+            android:layout_below="@id/view1"
+            android:layout_marginStart="55dp"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view1"
+            android:layout_marginTop="15dp"
+            android:textStyle="italic|bold"
+            android:textSize="18sp"
+            android:textColor="#EB000000"
+            android:id="@+id/finalamount"
+            android:layout_marginEnd="45dp"
+            android:paddingEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:gravity="end"
+            />
+<!--
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_below="@id/finalamount"
+            android:layout_marginTop="20dp"
+            android:textStyle="italic|bold"
+            android:textSize="18sp"
+            android:textColor="#EB000000"
+            android:id="@+id/code"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/btn"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:hint="Reference [Optional]"
+            />
+-->
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@+id/finalamount"
+            android:layout_marginTop="20dp"
+            android:background="#41000000"
+            android:id="@+id/view2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Delivery address:"
+            android:textStyle="bold"
+            android:textSize="22.5sp"
+            android:textColor="#000"
+            android:id="@+id/txt5"
+            android:layout_below="@id/view2"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:textColor="#CE000000"
+            android:id="@+id/address"
+            android:layout_below="@id/txt5"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@+id/address"
+            android:layout_marginTop="25dp"
+            android:background="#4D000000"
+            android:id="@+id/view6"
+            />
+
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Proceed to payment"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:id="@+id/payment"
+            android:layout_below="@id/view6"
+            android:background="@drawable/btndes"
+            android:layout_marginEnd="10dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_below="@+id/payment"
+            android:layout_marginStart="150dp"
+            android:layout_marginEnd="150dp"
+            android:background="#DA0A0A"
+            android:id="@+id/view7"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Cash On Delivery"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:id="@+id/cod"
+            android:layout_below="@id/view7"
+            android:background="@drawable/btndes"
+            android:layout_marginEnd="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            />
+
+
+        <!--<EditText
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="30dp"
+            android:hint="Enter address"
+            android:layout_below="@+id/txt5"
+            android:background="@drawable/btn"
+            android:textSize="19sp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:id="@+id/address"
+            />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/address"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:id="@+id/locality"
+            />
+-->
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

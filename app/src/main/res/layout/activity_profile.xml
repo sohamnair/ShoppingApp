@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.morningessetial.morningessentials.Profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:id="@+id/r1"
+            android:background="#BCFFFFFF"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+                android:gravity="center"
+                android:id="@+id/finish"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:id="@+id/t1"
+                android:layout_centerInParent="true"
+                android:text="Settings"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:textColor="#DFEC2020"
+                android:id="@+id/signout"
+                android:layout_alignParentEnd="true"
+                android:text="Sign-Out"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/r1"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#C8000000"
+                android:layout_marginEnd="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/btn"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:id="@+id/name"
+                android:hint="Name"
+                android:inputType="textCapSentences"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:hint="Contact"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#C8000000"
+                android:layout_marginEnd="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:inputType="number"
+                android:maxLength="10"
+                android:id="@+id/contact"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#C8000000"
+                android:layout_marginEnd="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="15dp"
+                android:id="@+id/building"
+                android:hint="Flat no, building name"
+                android:inputType="textCapSentences"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#C8000000"
+                android:layout_marginEnd="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="15dp"
+                android:id="@+id/area"
+                android:hint="Area name"
+                android:inputType="textCapSentences"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#C8000000"
+                android:layout_marginEnd="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="15dp"
+                android:id="@+id/locality"
+                android:hint="Locality"
+                android:inputType="textCapSentences"
+                />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#C8000000"
+                    android:background="@drawable/btn"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="15dp"
+                    android:id="@+id/pincode"
+                    android:hint="City-Pincode"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginStart="25dp"
+                    android:inputType="textCapSentences"
+                    />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_marginEnd="80dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btndes"
+                android:id="@+id/update"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
